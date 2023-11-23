@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"math/rand"
 	"os"
@@ -109,13 +108,9 @@ func main() {
 	p1ShipPositions := generateRandomCoordinates(totalShips)
 	p2ShipPositions := generateRandomCoordinates(totalShips)
 
-	fmt.Println(totalShips)
-
 	totalMissiles := rand.Intn(7)
 	p1MissileMoves := generateRandomCoordinates(totalMissiles)
 	p2MissileMoves := generateRandomCoordinates(totalMissiles)
-
-	fmt.Println(totalMissiles)
 
 	// Setup Player and opponent
 	game.SetUpPlayer(player, gridSize, totalShips, totalMissiles, p1ShipPositions, p1MissileMoves)
