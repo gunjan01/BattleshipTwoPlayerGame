@@ -108,7 +108,7 @@ func main() {
 	p1ShipPositions := generateRandomCoordinates(totalShips)
 	p2ShipPositions := generateRandomCoordinates(totalShips)
 
-	totalMissiles := rand.Intn(7)
+	totalMissiles := rand.Intn(gridSize)
 	p1MissileMoves := generateRandomCoordinates(totalMissiles)
 	p2MissileMoves := generateRandomCoordinates(totalMissiles)
 
